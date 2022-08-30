@@ -40,10 +40,64 @@
                     <p class="mb-4">
                         QR Codes allow smartphone users to access your website simply and quickly.
                     </p>
+                    <p class="mb-4">
+                        Select option below.
+                    </p>
+
+                    <nav>
+                        <ul>
+                            <li>
+                                <!-- opens the url after scanning -->
+                                <span>URL</span>
+                            </li>
+                            <!-- saves contact details on smartphone -->
+                            <li>
+                                <span>VCard</span>
+                            </li>
+                            <!-- displays plain text -->
+                            <li>
+                                <span>Text</span>
+                            </li>
+                            <!-- sends an email with a predefined text -->
+                            <li>
+                                <span>Email</span>
+                            </li>
+                            <!-- sends a SMS with a predefined text -->
+                            <li>
+                                <span>SMS</span>
+                            </li>
+                            <!-- connects to a wifi network -->
+                            <li>
+                                <span>Wifi</span>
+                            </li>
+                            <!-- displays a Facebook button -->
+                            <li>
+                                <span>Facebook</span>
+                            </li>
+                            <!-- displays a PDF -->
+                            <li>
+                                <span>PDF</span>
+                            </li>
+                            <!-- plays a MP3 file -->
+                            <li>
+                                <span>MP3</span>
+                            </li>
+                            <!-- directs to different app stores -->
+                            <li>
+                                <span>App Stores</span>
+                            </li>
+                            <!-- shows an image gallery -->
+                            <li>
+                                <span>Image</span>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    <form id="generate-form" class="mt-4">
+                        <!-- opens the url after scanning -->
                     <p>
                         Enter your URL below to generate a QR Code and download the image.
                     </p>
-                    <form id="generate-form" class="mt-4">
                         <input id="url" type="url" placeholder="Enter a URL"
                         class="w-full border-2 border-gray-200 rounded p-3 text-gray-dark mr-2 focus:outline-none mb-5">
                         <select id="size" class="w-full border-2 border-gray-200 rounded p-3 text-gray-dark mr-2 focus:outline-none">
@@ -55,6 +109,8 @@
                             <option value="600">600x600</option>
                             <option value="700">700x700</option>
                         </select>
+                        
+
                         <button class="bg-gray-600 rounded w-full text-white py-3 px-4 mt-5 hover:bg-black" type="submit">Generate QR Code</button>
                     </form>
                 </div>
