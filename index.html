@@ -14,6 +14,8 @@
             }
         }
         </script>
+        <!-- make sure that you have the Flowbite JavaScript file included in your project in order to make the tooltip component work. -->
+        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" /> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="js/script.js" defer></script>
         <style>
@@ -47,37 +49,49 @@
                     <nav>
                         <ul>
                             <li>
-                                <span title="Opens the URL after scanning" class="hover-text">URL</span>
+                                <button data-tooltip-target="tooltip-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">URL</button>
+                                <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(529px, 70px);">Opens the URL after scanning<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate(90px, 0px);"></div></div>
+
                             </li>
                             <li>
-                                <span title="Saves contact details on smartphone" class="hover-text">VCard</span>
+                                <button data-tooltip-target="tooltip-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VCard</button>
+                                <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(529px, 70px);">Displays plain text<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate(90px, 0px);"></div></div>
                             </li>
                             <li>
-                                <span title="Displays plain text" class="hover-text">Text</span>
+                                <button data-tooltip-target="tooltip-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Text</button>
+                                <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(529px, 70px);">"Displays plain text<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate(90px, 0px);"></div></div>
                             </li>
                             <li>
-                                <span title="Sends an email with a predefined text" class="hover-text">Email</span>
+                                <button data-tooltip-target="tooltip-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Email</button>
+                                <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(529px, 70px);">Sends an email with a predefined text<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate(90px, 0px);"></div></div>
                             </li>
                             <li>
-                                <span title="Sends a SMS with a predefined text" class="hover-text">SMS</span>
+                                <button data-tooltip-target="tooltip-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">SMS</button>
+                                <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(529px, 70px);">Sends a SMS with a predefined text<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate(90px, 0px);"></div></div>
                             </li>
                             <li>
-                                <span title="Connects to a WIFI network" class="hover-text">Wifi</span>
+                                <button data-tooltip-target="tooltip-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">WIFI</button>
+                                <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(529px, 70px);">Connects to a WIFI network<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate(90px, 0px);"></div></div>
                             </li>
                             <li>
-                                <span title="Displays a Facebook button" class="hover-text">Facebook</span>
+                                <button data-tooltip-target="tooltip-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Facebook</button>
+                                <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(529px, 70px);">Displays a Facebook button<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate(90px, 0px);"></div></div>
                             </li>
                             <li>
-                                <span title="Displays a PDF" class="hover-text">PDF</span>
+                                <button data-tooltip-target="tooltip-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">PDF</button>
+                                <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(529px, 70px);">Displays a PDF<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate(90px, 0px);"></div></div>
                             </li>
                             <li>
-                                <span title="Plays a MP3 file" class="hover-text">MP3</span>
+                                <button data-tooltip-target="tooltip-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">MP3</button>
+                                <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(529px, 70px);">Plays a MP3 file<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate(90px, 0px);"></div></div>
                             </li>
                             <li>
-                                <span title="Directs to different app stores" class="hover-text">App Stores</span>
+                                <button data-tooltip-target="tooltip-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">App Stores</button>
+                                <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(529px, 70px);">Directs to different app stores<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate(90px, 0px);"></div></div>
                             </li>
                             <li>
-                                <span title="Shows an image gallery" class="hover-text">Image</span>
+                                <button data-tooltip-target="tooltip-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Image</button>
+                                <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(529px, 70px);">Shows an image gallery<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate(90px, 0px);"></div></div>
                             </li>
                         </ul>
                     </nav>
@@ -129,5 +143,7 @@
                     <div id="qrcode" class="m-auto"></div>
             </div>
         </main>
+        <!-- make sure that you have the Flowbite JavaScript file included in your project in order to make the tooltip component work. -->
+        <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
     </body>
 </html>
