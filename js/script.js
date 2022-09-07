@@ -1,5 +1,23 @@
-const form = document.getElementById('generate-form');
+const urlForm = document.getElementById('generate-url-form');
+const vCardForm = document.getElementById('generate-vCard-form');
+const textForm = document.getElementById('generate-text-form');
+const emailForm = document.getElementById('generate-email-form');
+const smsForm = document.getElementById('generate-sms-form');
+const wifiForm = document.getElementById('generate-wifi-form');
+const facebookForm = document.getElementById('generate-facebook-form');
+const pdfForm = document.getElementById('generate-pdf-form');
+const mp3Form = document.getElementById('generate-mp3-form');
+const appStoresForm = document.getElementById('generate-app-stores-form');
+const imageForm = document.getElementById('generate-image-form');
+
 const qr = document.getElementById('qrcode');
+
+function showURLForm() {
+    document.getElementById('generate-url-form').style.display = 'block';
+}
+function showVCardForm() {
+    document.getElementById('generate-vCard-form').style.display = 'block';
+}
 
 const onGenerateSubmit = (e) => {
     e.preventDefault();
@@ -64,4 +82,14 @@ const createSaveBtn = (saveURL) => {
 
 hideSpinner();
 
-form.addEventListener('submit', onGenerateSubmit)
+urlForm.addEventListener('submit', onGenerateSubmit)
+vCardForm.addEventListener('submit', onGenerateSubmit)
+textForm.addEventListener('submit', onGenerateSubmit)
+emailForm.addEventListener('submit', onGenerateSubmit)
+smsForm.addEventListener('submit', onGenerateSubmit)
+wifiForm.addEventListener('submit', onGenerateSubmit)
+facebookForm.addEventListener('submit', onGenerateSubmit)
+pdfForm.addEventListener('submit', onGenerateSubmit)
+mp3Form.addEventListener('submit', onGenerateSubmit)
+appStoresForm.addEventListener('submit', onGenerateSubmit)
+imageForm.addEventListener('submit', onGenerateSubmit)
